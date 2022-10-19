@@ -1,6 +1,7 @@
 <template>
     <div class="product-card">
-        <picture><img src="./images/image-product-desktop.jpg" alt="Perfume bottle" width="200px"></picture>
+        <!-- <PerfumeImage names = 'perfume' widths='100px'/> -->
+        <img src="./images/image-product-desktop.jpg" alt="Perfume bottle" width="200px">
         <div class="side">
             <div class="description">
                 <span class="category">PERFUME</span>
@@ -86,6 +87,7 @@
 
 <script>
 import KpsIcons from './icons/KpsIcons.vue'
+import PerfumeImage from '../components/icons/PerfumeImage.vue'
 export default {
     data(){
         return{
@@ -93,7 +95,8 @@ export default {
         }
     },
     components: {
-        KpsIcons
+        KpsIcons,
+        PerfumeImage
     }
 }
 </script>
